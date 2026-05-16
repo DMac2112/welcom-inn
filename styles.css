@@ -97,6 +97,9 @@ p  { color: var(--text); }
   transition: box-shadow var(--transition), transform 0.3s ease;
 }
 .nav.scrolled { box-shadow: var(--shadow); }
+@media (max-width: 900px) {
+  .nav--hidden { transform: translateY(-100%); }
+}
 
 .nav .container {
   display: flex;
@@ -505,13 +508,17 @@ p  { color: var(--text); }
 }
 
 @media (max-width: 768px) {
-  .hero h1 { font-size: 1.8rem; }
-  .hero p { font-size: 0.95rem; }
+  .hero { padding-bottom: 2rem; }
+  .hero .container > img { height: 65px !important; margin-bottom: 1rem !important; }
+  .hero h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+  .hero p { font-size: 0.95rem; margin-bottom: 1.5rem; }
   .section { padding: 4rem 0; }
   .cta-banner { padding: 4rem 1.5rem; }
   .footer__top { flex-direction: column; text-align: center; gap: 2.5rem; }
   .footer__brand p { max-width: 100%; }
   .footer__links ul { align-items: center; }
+  .footer__links li,
+  .footer__links a { text-align: center; display: block; width: 100%; }
   .footer__socials { justify-content: center; }
   .property-card__img { height: 200px; }
   .trust-bar .container { gap: 2rem; }

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Hide navbar when footer is visible
+    // Hide navbar on mobile when footer is visible
     const footer = document.querySelector('.footer');
     if (footer && navbar) {
         const closeMobileMenu = () => {
@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const footerObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    navbar.style.transform = 'translateY(-100%)';
+                    navbar.classList.add('nav--hidden');
                     closeMobileMenu();
                 } else {
-                    navbar.style.transform = '';
+                    navbar.classList.remove('nav--hidden');
                 }
             });
-        }, { threshold: 0.01 });
+        }, { threshold: 0 });
         footerObserver.observe(footer);
     }
 
