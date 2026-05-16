@@ -27,6 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Hide navbar when footer is visible
+    const footer = document.querySelector('.footer');
+    if (footer && navbar) {
+        const closeMobileMenu = () => {
+            if (navLinks) navLinks.classList.remove('active');
+            const icon = mobileBtn ? mobileBtn.querySelector('i') : null;
+            if (icon) { icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars'); }
+        };
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navbar.style.transform = 'translateY(-100%)';
+                    closeMobileMenu();
+                } else {
+                    navbar.style.transform = '';
+                }
+            });
+        }, { threshold: 0.01 });
+        footerObserver.observe(footer);
+    }
+
     // Intersection Observer for Animations (Snappy & Fast)
     const observerOptions = {
         root: null,

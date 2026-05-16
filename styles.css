@@ -94,7 +94,7 @@ p  { color: var(--text); }
   z-index: 1000;
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  transition: box-shadow var(--transition);
+  transition: box-shadow var(--transition), transform 0.3s ease;
 }
 .nav.scrolled { box-shadow: var(--shadow); }
 
@@ -202,6 +202,7 @@ p  { color: var(--text); }
   align-items: center;
   gap: 4rem;
 }
+.split-section--reverse { flex-direction: row-reverse; }
 .split-section__content { flex: 1; }
 .split-section__content h2 { margin-bottom: 1.5rem; }
 .split-section__content p { margin-bottom: 1.5rem; font-size: 1.1rem; }
@@ -300,6 +301,7 @@ p  { color: var(--text); }
 .footer__brand p { color: var(--muted); max-width: 300px; }
 .footer__links h4 { margin-bottom: 1.5rem; color: var(--plum); }
 .footer__links ul { display: flex; flex-direction: column; gap: 0.8rem; }
+.footer__links li { color: var(--muted); font-size: 0.95rem; }
 .footer__links a { color: var(--muted); transition: color var(--transition); }
 .footer__links a:hover { color: var(--plum); }
 .footer__socials { display: flex; gap: 1rem; margin-top: 1.5rem; }
@@ -496,17 +498,20 @@ p  { color: var(--text); }
   .nav__links a { font-size: 1.2rem; padding: 1rem 2rem; width: 80%; text-align: center; }
   .nav__cta { margin-left: 0; margin-top: 1rem; width: 80%; text-align: center; }
 
-  .split-section { flex-direction: column; gap: 2.5rem; }
+  .split-section,
+  .split-section--reverse { flex-direction: column; gap: 2.5rem; }
   .split-section__content { text-align: center; }
   .split-section__image { width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.5rem; }
-  .hero p { font-size: 1.1rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 0.95rem; }
   .section { padding: 4rem 0; }
   .cta-banner { padding: 4rem 1.5rem; }
   .footer__top { flex-direction: column; text-align: center; gap: 2.5rem; }
+  .footer__brand p { max-width: 100%; }
+  .footer__links ul { align-items: center; }
   .footer__socials { justify-content: center; }
   .property-card__img { height: 200px; }
   .trust-bar .container { gap: 2rem; }
