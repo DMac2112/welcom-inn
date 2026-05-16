@@ -5,6 +5,15 @@
 - Added "No Long-term Contract" card to work.html pricing section
 - Mobile responsiveness: footer centering, hero text/button overflow, split-section stacking, navbar hides when footer dominates screen
 - PO Box visual weight fix (muted colour)
+- **sitemap.xml + robots.txt** created in project root
+- **Google Analytics** (`G-T3C10B0TEE`) restored on all 4 pages
+- **Google Fonts double-load** fixed (removed duplicate `@import` from styles.css)
+- **Lazy loading** added to all below-the-fold images across all 4 pages
+- **Canonical URLs** added to all 4 pages
+- **"How It Works"** 4-step process section added to work.html
+- **WhatsApp floating button** (bottom-right, fixed) added to all 4 pages
+- **Breadcrumbs** (visual + `BreadcrumbList` JSON-LD) added to work.html, properties.html, faq.html
+- **Alt text** on all property slider images now descriptive and keyword-rich
 
 ---
 

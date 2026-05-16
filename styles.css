@@ -3,8 +3,6 @@
    Palette: White, Deep Plum, Gold Accent
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
-
 :root {
   --plum:        #7A1B4E;
   --plum-dark:   #5C1539;
@@ -465,6 +463,104 @@ p  { color: var(--text); }
 .slider-btn:hover { background: var(--plum); color: var(--white); }
 .slider-prev { left: 15px; }
 .slider-next { right: 15px; }
+
+/* ── Breadcrumbs ── */
+.breadcrumb {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 0;
+  font-size: 0.9rem;
+}
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  list-style: none;
+}
+.breadcrumb li { color: var(--muted); }
+.breadcrumb li:not(:last-child)::after {
+  content: '/';
+  margin-left: 0.5rem;
+  color: var(--border);
+}
+.breadcrumb a {
+  color: var(--plum);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+.breadcrumb a:hover { color: var(--plum-dark); text-decoration: underline; }
+.breadcrumb li[aria-current="page"] {
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+/* ── How It Works Process Steps ── */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  counter-reset: step;
+}
+.process-step {
+  position: relative;
+  background: var(--white);
+  padding: 2.5rem 1.5rem 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.process-step:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+.process-step__num {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--plum-dark);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.4);
+}
+.process-step h3 { margin: 0.5rem 0 0.75rem; color: var(--plum); font-size: 1.2rem; }
+.process-step p { color: var(--muted); font-size: 0.95rem; }
+
+/* ── WhatsApp Floating Button ── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.55);
+  color: var(--white);
+}
+@media (max-width: 768px) {
+  .whatsapp-float { width: 48px; height: 48px; font-size: 1.5rem; bottom: 1rem; right: 1rem; }
+}
 
 /* ── Animations ── */
 .reveal {

@@ -5,7 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>List Your Property — Welcom-Inn Belfast</title>
   <meta name="description" content="Maximise your rental income with Welcom-Inn. We manage your Belfast property across Airbnb, Booking.com & VRBO. Commission from just 15%.">
-  
+  <link rel="canonical" href="https://dmac2112.github.io/welcom-inn/work.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3C10B0TEE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T3C10B0TEE');
+  </script>
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmac2112.github.io/welcom-inn/index.html"},
+      {"@type": "ListItem", "position": 2, "name": "List a Property", "item": "https://dmac2112.github.io/welcom-inn/work.html"}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,6 +64,16 @@
     </div>
   </header>
 
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">List a Property</li>
+      </ol>
+    </div>
+  </nav>
+
   <!-- Intro Section -->
   <section class="section">
     <div class="container split-section reveal">
@@ -52,7 +84,41 @@
         <p>We leverage this knowledge to enhance the appeal of your property and provide guests with an authentic Belfast experience.</p>
       </div>
       <div class="split-section__image">
-        <img src="pictures/belfast.jpg" alt="Belfast Area">
+        <img src="pictures/belfast.jpg" alt="Belfast Area" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span style="color: var(--gold); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">How It Works</span>
+        <h2>From Enquiry to Earning in Four Steps</h2>
+        <p>A straightforward path from your first message to your first payout.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="process-step__num">1</div>
+          <h3>Get in Touch</h3>
+          <p>Reach out by email, phone or WhatsApp. Tell us a little about your property and your hosting goals.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">2</div>
+          <h3>Free Evaluation</h3>
+          <p>We visit your property, assess its potential, and put together a tailored management proposal at no cost.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">3</div>
+          <h3>List &amp; Go Live</h3>
+          <p>Professional photography, optimised listings across Airbnb, Booking.com and VRBO, and guest communications handled.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__num">4</div>
+          <h3>Earn Monthly</h3>
+          <p>Payouts direct to your bank by the 5th of every month, with a detailed earnings report.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -131,7 +197,7 @@
         <p>Our cleaning staff inspect the property and report any potential issues so that we can handle them ASAP. This allows us to schedule maintenance checks and any subsequent repairs for appliances or equipment if they are needed.</p>
       </div>
       <div class="split-section__image">
-        <img src="pictures/cleaning.jpg" alt="Cleaning Services">
+        <img src="pictures/cleaning.jpg" alt="Cleaning Services" loading="lazy">
       </div>
     </div>
   </section>
@@ -181,7 +247,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="logos/black-logo.png" alt="Welcom-Inn">
+          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy">
           <p>Premium Airbnb property management services in Belfast. We handle the hosting, you keep the rewards.</p>
           <div class="footer__socials">
             <a href="https://www.facebook.com/welcom.inn" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -214,6 +280,10 @@
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <script src="main.js"></script>
 </body>

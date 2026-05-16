@@ -5,7 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Properties — Welcom-Inn Belfast</title>
   <meta name="description" content="Book a stay in one of our premium Belfast properties. Professionally managed for a 5-star experience.">
-  
+  <link rel="canonical" href="https://dmac2112.github.io/welcom-inn/properties.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3C10B0TEE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T3C10B0TEE');
+  </script>
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmac2112.github.io/welcom-inn/index.html"},
+      {"@type": "ListItem", "position": 2, "name": "Our Properties", "item": "https://dmac2112.github.io/welcom-inn/properties.html"}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,6 +64,16 @@
     </div>
   </header>
 
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Our Properties</li>
+      </ol>
+    </div>
+  </nav>
+
   <!-- Properties Grid -->
   <section class="section section--alt">
     <div class="container">
@@ -50,7 +82,7 @@
         <!-- Property 1 -->
         <div class="property-card reveal">
           <div class="property-card__img">
-            <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Property">
+            <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast" loading="lazy">
           </div>
           <div class="property-card__content">
             <h3>Botanic Avenue Suite</h3>
@@ -70,7 +102,7 @@
         <!-- Property 2 -->
         <div class="property-card reveal">
           <div class="property-card__img">
-            <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Property">
+            <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast" loading="lazy">
           </div>
           <div class="property-card__content">
             <h3>Bloomfield Avenue Retreat</h3>
@@ -90,7 +122,7 @@
         <!-- Property 3 -->
         <div class="property-card reveal">
           <div class="property-card__img">
-            <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Property">
+            <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast" loading="lazy">
           </div>
           <div class="property-card__content">
             <h3>Fitzroy Avenue Townhouse</h3>
@@ -120,11 +152,11 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Botanic/picture1.jpg" alt="Botanic 1">
-          <img src="pictures/Botanic/picture2.jpg" alt="Botanic 2">
-          <img src="pictures/Botanic/picture3.jpg" alt="Botanic 3">
-          <img src="pictures/Botanic/picture4.jpg" alt="Botanic 4">
-          <img src="pictures/Botanic/picture5.jpg" alt="Botanic 5">
+          <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast – view 1" loading="lazy">
+          <img src="pictures/Botanic/picture2.jpg" alt="Botanic Avenue Suite, Belfast – view 2" loading="lazy">
+          <img src="pictures/Botanic/picture3.jpg" alt="Botanic Avenue Suite, Belfast – view 3" loading="lazy">
+          <img src="pictures/Botanic/picture4.jpg" alt="Botanic Avenue Suite, Belfast – view 4" loading="lazy">
+          <img src="pictures/Botanic/picture5.jpg" alt="Botanic Avenue Suite, Belfast – view 5" loading="lazy">
         </div>
       </div>
     </div>
@@ -138,11 +170,11 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield 1">
-          <img src="pictures/Bloomfield/pic2.jpg" alt="Bloomfield 2">
-          <img src="pictures/Bloomfield/pic3.jpg" alt="Bloomfield 3">
-          <img src="pictures/Bloomfield/pic4.jpg" alt="Bloomfield 4">
-          <img src="pictures/Bloomfield/pic5.jpg" alt="Bloomfield 5">
+          <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 1" loading="lazy">
+          <img src="pictures/Bloomfield/pic2.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 2" loading="lazy">
+          <img src="pictures/Bloomfield/pic3.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 3" loading="lazy">
+          <img src="pictures/Bloomfield/pic4.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 4" loading="lazy">
+          <img src="pictures/Bloomfield/pic5.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 5" loading="lazy">
         </div>
       </div>
     </div>
@@ -156,11 +188,11 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy 1">
-          <img src="pictures/Fitzroy/IMG_9101.jpg" alt="Fitzroy 2">
-          <img src="pictures/Fitzroy/IMG_9102.jpg" alt="Fitzroy 3">
-          <img src="pictures/Fitzroy/IMG_9103.jpg" alt="Fitzroy 4">
-          <img src="pictures/Fitzroy/IMG_9105.jpg" alt="Fitzroy 5">
+          <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 1" loading="lazy">
+          <img src="pictures/Fitzroy/IMG_9101.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 2" loading="lazy">
+          <img src="pictures/Fitzroy/IMG_9102.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 3" loading="lazy">
+          <img src="pictures/Fitzroy/IMG_9103.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 4" loading="lazy">
+          <img src="pictures/Fitzroy/IMG_9105.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 5" loading="lazy">
         </div>
       </div>
     </div>
@@ -178,7 +210,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="logos/black-logo.png" alt="Welcom-Inn">
+          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy">
           <p>Premium Airbnb property management services in Belfast. We handle the hosting, you keep the rewards.</p>
           <div class="footer__socials">
             <a href="https://www.facebook.com/welcom.inn" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -211,6 +243,10 @@
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <script src="main.js"></script>
 </body>
