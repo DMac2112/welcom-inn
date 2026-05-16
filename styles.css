@@ -316,6 +316,16 @@ p  { color: var(--text); }
 
 /* ── FAQ Accordion ── */
 .faq-accordion { max-width: 800px; margin: 0 auto; }
+.faq-category-label {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  display: block;
+}
 .faq-item {
   border: 1px solid var(--border);
   border-radius: var(--radius);
