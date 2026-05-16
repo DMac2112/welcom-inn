@@ -1,18 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar Scroll Effect
-    const navbar = document.getElementById('navbar');
-    
+    const navbar  = document.getElementById('navbar');
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navLinks  = document.querySelector('.nav__links');
+    const footer    = document.querySelector('.footer');
+
+    const closeMobileMenu = () => {
+        if (navLinks) navLinks.classList.remove('active');
+        const icon = mobileBtn ? mobileBtn.querySelector('i') : null;
+        if (icon) { icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars'); }
+    };
+
+    // Navbar scroll shadow + hide when footer dominates the screen on mobile
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+
+        if (footer && window.innerWidth <= 900) {
+            const footerTop = footer.getBoundingClientRect().top;
+            if (footerTop < window.innerHeight / 2) {
+                navbar.classList.add('nav--hidden');
+                closeMobileMenu();
+            } else {
+                navbar.classList.remove('nav--hidden');
+            }
         }
-    });
+    }, { passive: true });
 
     // Mobile Menu Toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const navLinks = document.querySelector('.nav__links');
     if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
@@ -25,27 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.add('fa-bars');
             }
         });
-    }
-
-    // Hide navbar on mobile when footer is visible
-    const footer = document.querySelector('.footer');
-    if (footer && navbar) {
-        const closeMobileMenu = () => {
-            if (navLinks) navLinks.classList.remove('active');
-            const icon = mobileBtn ? mobileBtn.querySelector('i') : null;
-            if (icon) { icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars'); }
-        };
-        const footerObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navbar.classList.add('nav--hidden');
-                    closeMobileMenu();
-                } else {
-                    navbar.classList.remove('nav--hidden');
-                }
-            });
-        }, { threshold: 0 });
-        footerObserver.observe(footer);
     }
 
     // Intersection Observer for Animations (Snappy & Fast)

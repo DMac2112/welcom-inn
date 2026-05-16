@@ -515,10 +515,11 @@ p  { color: var(--text); }
   .section { padding: 4rem 0; }
   .cta-banner { padding: 4rem 1.5rem; }
   .footer__top { flex-direction: column; text-align: center; gap: 2.5rem; }
+  .footer__brand img { margin: 0 auto; }
   .footer__brand p { max-width: 100%; }
-  .footer__links ul { align-items: center; }
-  .footer__links li,
-  .footer__links a { text-align: center; display: block; width: 100%; }
+  .footer__links { text-align: center; }
+  .footer__links a { display: block; text-align: center; }
+  .footer__links li { text-align: center; }
   .footer__socials { justify-content: center; }
   .property-card__img { height: 200px; }
   .trust-bar .container { gap: 2rem; }
