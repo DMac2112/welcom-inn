@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (footer && window.innerWidth <= 900) {
             const footerTop = footer.getBoundingClientRect().top;
-            if (footerTop < window.innerHeight / 2) {
+            if (footerTop < window.innerHeight * 0.2) {
                 navbar.classList.add('nav--hidden');
                 closeMobileMenu();
             } else {
