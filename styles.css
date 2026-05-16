@@ -514,13 +514,17 @@ p  { color: var(--text); }
   .hero p { font-size: 0.95rem; margin-bottom: 1.5rem; }
   .section { padding: 4rem 0; }
   .cta-banner { padding: 4rem 1.5rem; }
-  .footer__top { flex-direction: column; align-items: stretch; text-align: center; gap: 2.5rem; }
-  .footer__brand img { margin: 0 auto 2rem; }
+  .footer { padding: 2rem 0 1rem; }
+  .footer__top { flex-direction: column; align-items: stretch; text-align: center; gap: 1.25rem; margin-bottom: 1.25rem; }
+  .footer__brand img { margin: 0 auto 1rem; }
   .footer__brand p { max-width: 100%; }
   .footer__links { text-align: center; }
+  .footer__links h4 { margin-bottom: 0.6rem; }
+  .footer__links ul { gap: 0.4rem; }
   .footer__links a { display: block; text-align: center; }
   .footer__links li { text-align: center; }
-  .footer__socials { justify-content: center; }
+  .footer__socials { justify-content: center; margin-top: 0.75rem; }
+  .footer__bottom { padding-top: 1rem; }
   .property-card__img { height: 200px; }
   .trust-bar .container { gap: 2rem; }
 }
