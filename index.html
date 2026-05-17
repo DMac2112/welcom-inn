@@ -6,6 +6,18 @@
   <title>Welcom-Inn — Airbnb Property Management in Belfast</title>
   <meta name="description" content="Professional Airbnb management services in Belfast. Listing optimisation, guest communication, cleaning & maintenance. Keep up to 85% of your revenue.">
   <link rel="canonical" href="https://dmac2112.github.io/welcom-inn/index.html">
+  <link rel="icon" href="favicon.jpg">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Welcom-Inn — Airbnb Property Management in Belfast">
+  <meta property="og:description" content="Professional Airbnb management services in Belfast. Listing optimisation, guest communication, cleaning & maintenance. Keep up to 85% of your revenue.">
+  <meta property="og:image" content="https://dmac2112.github.io/welcom-inn/logos/black-logo.png">
+  <meta property="og:url" content="https://dmac2112.github.io/welcom-inn/index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Welcom-Inn — Airbnb Property Management in Belfast">
+  <meta name="twitter:description" content="Professional Airbnb management services in Belfast. Keep up to 85% of your revenue.">
+  <meta name="twitter:image" content="https://dmac2112.github.io/welcom-inn/logos/black-logo.png">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3C10B0TEE"></script>
@@ -14,6 +26,42 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T3C10B0TEE');
+  </script>
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Welcom-Inn",
+    "description": "Professional Airbnb property management services in Belfast. Listing optimisation, guest communication, cleaning and maintenance.",
+    "url": "https://dmac2112.github.io/welcom-inn/",
+    "telephone": "+44 7938 571368",
+    "email": "contact@welcom-inn.co.uk",
+    "image": "https://dmac2112.github.io/welcom-inn/logos/black-logo.png",
+    "priceRange": "15%-22% commission",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "PO BOX, 7 Botanic Avenue",
+      "addressLocality": "Belfast",
+      "postalCode": "BT7 1JG",
+      "addressCountry": "GB"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Belfast"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "20:00",
+      "description": "Contactable hours"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/welcom.inn"
+    ]
+  }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +114,30 @@
       <img src="pictures/listing/vrbo-logo.png" alt="VRBO" loading="lazy">
     </div>
   </div>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar reveal">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stats-bar__item">
+          <div class="stats-bar__num">4.88<span>★</span></div>
+          <div class="stats-bar__label">Airbnb Rating</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__num">1000s</div>
+          <div class="stats-bar__label">Guests Hosted</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__num">85<span>%</span></div>
+          <div class="stats-bar__label">Revenue Kept</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__num">3</div>
+          <div class="stats-bar__label">Managed Properties</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section class="section">
@@ -153,23 +225,22 @@
         <p>See what people are saying about our properties.</p>
       </div>
       
-      <div class="reviews-grid">
-        <div class="review-card reveal">
-          <div class="review-card__stars">★★★★★</div>
-          <p>"Immaculate property right in the heart of Belfast. The hosts were incredibly responsive and the check-in process was seamless. Highly recommend!"</p>
-          <div class="review-card__author">— Sarah T.</div>
-        </div>
-        <div class="review-card reveal">
-          <div class="review-card__stars">★★★★★</div>
-          <p>"Beautiful home with everything we needed for a weekend getaway. You can tell they put a lot of care into maintaining the space."</p>
-          <div class="review-card__author">— Mark D.</div>
-        </div>
-        <div class="review-card reveal">
-          <div class="review-card__stars">★★★★★</div>
-          <p>"Best Airbnb experience we've had in Northern Ireland. Spotlessly clean, comfortable beds, and excellent local recommendations."</p>
-          <div class="review-card__author">— Emily R.</div>
-        </div>
+      <div class="reviews-screenshots reveal">
+        <a href="https://www.airbnb.com/rooms/959990234714439468" target="_blank" rel="noopener" class="review-screenshot">
+          <img src="pictures/airbnb-reviews.PNG" alt="Real Airbnb guest reviews for Welcom-Inn Belfast properties" loading="lazy">
+          <span class="review-screenshot__cta">View on Airbnb <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+        <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener" class="review-screenshot">
+          <img src="pictures/bookingcom-reviews.PNG" alt="Real Booking.com guest reviews for Welcom-Inn Belfast properties" loading="lazy">
+          <span class="review-screenshot__cta">View on Booking.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
       </div>
+      <p style="text-align: center; margin-top: 2rem; color: var(--muted); font-size: 0.95rem;">
+        Also listed on
+        <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">VRBO</a>
+        and
+        <a href="https://www.hostelworld.com/hostels/p/329365/botanic-avenue-hostel/" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Hostelworld</a>.
+      </p>
     </div>
   </section>
 
