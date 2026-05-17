@@ -194,6 +194,7 @@ p  { color: var(--text); }
   gap: 4rem;
   flex-wrap: wrap;
 }
+.trust-bar__logos { display: flex; align-items: center; gap: 4rem; }
 .trust-bar img { height: 35px; opacity: 0.7; filter: grayscale(100%); transition: all var(--transition); }
 .trust-bar img:hover { opacity: 1; filter: grayscale(0%); }
 
@@ -358,6 +359,66 @@ p  { color: var(--text); }
 }
 .cta-banner h2 { color: var(--white); margin-bottom: 1.5rem; }
 .cta-banner p { color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2.5rem; }
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Platform Review Cards ── */
+.platform-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.platform-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
+}
+.platform-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+.platform-card img {
+  height: 32px;
+  object-fit: contain;
+}
+.platform-card__score {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.platform-card__score small {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+.platform-card__stars {
+  color: var(--gold);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.platform-card__label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .platform-reviews { grid-template-columns: 1fr; gap: 1rem; }
+}
 
 /* ── Footer ── */
 .footer {
@@ -439,14 +500,14 @@ p  { color: var(--text); }
   max-height: 0;
   overflow: hidden;
   background: var(--surface);
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition: max-height 0.15s ease, padding 0.15s ease;
 }
 .faq-item.active .faq-body {
   padding: 1.5rem;
   max-height: 800px;
 }
 .faq-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.15s ease;
   color: var(--gold);
 }
 .faq-item.active .faq-icon {
@@ -697,5 +758,8 @@ p  { color: var(--text); }
   .footer__socials { justify-content: center; margin-top: 0.75rem; }
   .footer__bottom { padding-top: 1rem; }
   .property-card__img { height: 200px; }
-  .trust-bar .container { gap: 2rem; }
+  .trust-bar .container { flex-direction: column; gap: 1rem; }
+  .trust-bar .container h4 { width: 100%; text-align: center; margin-bottom: 0; }
+  .trust-bar__logos { display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: nowrap; }
+  .trust-bar img { height: 28px; }
 }

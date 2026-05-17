@@ -109,9 +109,11 @@
   <div class="trust-bar">
     <div class="container">
       <h4 style="color: var(--muted); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Listed On</h4>
-      <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" loading="lazy">
-      <img src="pictures/listing/booking-logo.png" alt="Booking.com" loading="lazy">
-      <img src="pictures/listing/vrbo-logo.png" alt="VRBO" loading="lazy">
+      <div class="trust-bar__logos">
+        <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" loading="lazy">
+        <img src="pictures/listing/booking-logo.png" alt="Booking.com" loading="lazy">
+        <img src="pictures/listing/vrbo-logo.png" alt="VRBO" loading="lazy">
+      </div>
     </div>
   </div>
 
@@ -128,12 +130,12 @@
           <div class="stats-bar__label">Guests Hosted</div>
         </div>
         <div class="stats-bar__item">
-          <div class="stats-bar__num">85<span>%</span></div>
-          <div class="stats-bar__label">Revenue Kept</div>
+          <div class="stats-bar__num">24<span>/7</span></div>
+          <div class="stats-bar__label">Guest Support</div>
         </div>
         <div class="stats-bar__item">
-          <div class="stats-bar__num">3</div>
-          <div class="stats-bar__label">Managed Properties</div>
+          <div class="stats-bar__num">From 15<span>%</span></div>
+          <div class="stats-bar__label">Commission</div>
         </div>
       </div>
     </div>
@@ -215,41 +217,45 @@
   </section>
 
   <!-- Social Proof -->
-  <section class="section section--dark">
+  <section class="section section--alt">
     <div class="container">
       <div class="section-header reveal">
-        <div style="font-size: 4rem; font-weight: 700; color: var(--gold); font-family: 'Outfit', sans-serif; display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
-          4.88 <span style="font-size: 1.5rem; color: var(--white); font-weight: 400;">/ 5 on Airbnb</span>
-        </div>
-        <h2>Loved by Guests</h2>
-        <p>See what people are saying about our properties.</p>
+        <span style="color: var(--gold); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">Guest Reviews</span>
+        <h2>Loved by Guests Across All Platforms</h2>
+        <p>See what our guests are saying about Welcom-Inn properties.</p>
       </div>
-      
-      <div class="reviews-screenshots reveal">
-        <a href="https://www.airbnb.com/rooms/959990234714439468" target="_blank" rel="noopener" class="review-screenshot">
-          <img src="pictures/airbnb-reviews.PNG" alt="Real Airbnb guest reviews for Welcom-Inn Belfast properties" loading="lazy">
-          <span class="review-screenshot__cta">View on Airbnb <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+
+      <div class="platform-reviews reveal">
+        <a href="https://www.airbnb.com/rooms/959990234714439468" target="_blank" rel="noopener" class="platform-card">
+          <img src="pictures/listing/airbnb-logo.png" alt="Airbnb">
+          <div class="platform-card__score">4.88 <small>/ 5</small></div>
+          <div class="platform-card__stars">★★★★★</div>
+          <div class="platform-card__label">View Reviews on Airbnb</div>
         </a>
-        <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener" class="review-screenshot">
-          <img src="pictures/bookingcom-reviews.PNG" alt="Real Booking.com guest reviews for Welcom-Inn Belfast properties" loading="lazy">
-          <span class="review-screenshot__cta">View on Booking.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener" class="platform-card">
+          <img src="pictures/listing/booking-logo.png" alt="Booking.com">
+          <div class="platform-card__stars">★★★★★</div>
+          <div class="platform-card__label">View Reviews on Booking.com</div>
+        </a>
+        <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener" class="platform-card">
+          <img src="pictures/listing/vrbo-logo.png" alt="VRBO">
+          <div class="platform-card__stars">★★★★★</div>
+          <div class="platform-card__label">View Listing on VRBO</div>
         </a>
       </div>
-      <p style="text-align: center; margin-top: 2rem; color: var(--muted); font-size: 0.95rem;">
-        Also listed on
-        <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">VRBO</a>
-        and
-        <a href="https://www.hostelworld.com/hostels/p/329365/botanic-avenue-hostel/" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Hostelworld</a>.
-      </p>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta-banner reveal">
-      <h2>Ready to elevate your hosting journey?</h2>
-      <p>Contact us today for a free property evaluation.</p>
-      <a href="mailto:contact@welcom-inn.co.uk" class="btn btn--gold">Get in Touch</a>
-    </section>
+    <h2>Ready to elevate your hosting journey?</h2>
+    <p>Contact us today for a free property evaluation.</p>
+    <div class="cta-actions">
+      <a href="tel:+447938571368" class="btn btn--outline-white"><i class="fa-solid fa-phone"></i> Call Us</a>
+      <a href="mailto:contact@welcom-inn.co.uk" class="btn btn--gold"><i class="fa-solid fa-envelope"></i> Email Us</a>
+      <a href="https://wa.me/+447938571368" target="_blank" rel="noopener" class="btn btn--outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
