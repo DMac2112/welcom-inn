@@ -162,6 +162,8 @@
   }
   </script>
 
+  <link rel="preload" as="image" href="pictures/booking-picture.webp" type="image/webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -191,7 +193,10 @@
 
   <!-- Hero Section -->
   <header class="hero" style="min-height: 50vh;">
-    <img src="pictures/booking-picture.jpg" alt="Kitchen" class="hero__bg" style="object-position: center 50%;">
+    <picture>
+      <source srcset="pictures/booking-picture.webp" type="image/webp">
+      <img src="pictures/booking-picture.jpg" alt="Kitchen" class="hero__bg" style="object-position: center 50%;">
+    </picture>
     <div class="container reveal">
       <h1>Frequently Asked Questions</h1>
       <p style="margin-bottom: 0;">Everything you need to know about partnering with Welcom-Inn.</p>

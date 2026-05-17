@@ -64,6 +64,8 @@
   }
   </script>
 
+  <link rel="preload" as="image" href="pictures/background.webp" type="image/webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -93,7 +95,10 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <img src="pictures/background.jpg" alt="Belfast Property" class="hero__bg">
+    <picture>
+      <source srcset="pictures/background.webp" type="image/webp">
+      <img src="pictures/background.jpg" alt="Belfast Property" class="hero__bg">
+    </picture>
     <div class="container reveal">
       <img src="logos/white-logo.png" alt="Welcom-Inn" style="height: 100px; margin-bottom: 2rem;">
       <h1>Expert Airbnb Management in Belfast</h1>
