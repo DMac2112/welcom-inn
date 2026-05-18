@@ -154,7 +154,7 @@ p  { color: var(--text); }
   display: flex;
   align-items: center;
   padding-top: 80px; /* Offset for nav */
-  background: var(--plum-dark);
+  background: #111;
   color: var(--white);
   overflow: hidden;
 }
@@ -163,7 +163,7 @@ p  { color: var(--text); }
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.35; /* Sharp image, no pink gradient, just dark opacity to make text readable */
+  opacity: 0.45;
   z-index: 1;
 }
 
