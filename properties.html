@@ -7,6 +7,8 @@
   <meta name="description" content="Book a stay in one of our premium Belfast properties. Professionally managed for a 5-star experience.">
   <link rel="canonical" href="https://dmac2112.github.io/welcom-inn/properties.html">
   <link rel="icon" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="favicon.jpg">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Our Properties — Welcom-Inn Belfast">
@@ -135,7 +137,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3596ef9c88.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -144,7 +146,7 @@
   <nav class="nav" id="navbar" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="nav__logo">
-        <img src="logos/black-logo.png" alt="Welcom-Inn">
+        <img src="logos/black-logo.png" alt="Welcom-Inn" width="908" height="504">
       </a>
       <button class="nav__toggle" id="mobile-menu-btn" aria-label="Toggle menu">
         <i class="fa-solid fa-bars"></i>
@@ -152,7 +154,7 @@
       <div class="nav__links">
         <a href="index.html">Home</a>
         <a href="work.html">List a Property</a>
-        <a href="properties.html" class="active">Book a Stay</a>
+        <a href="properties.html" class="active" aria-current="page">Book a Stay</a>
         <a href="faq.html">FAQ</a>
         <a href="mailto:contact@welcom-inn.co.uk" class="btn btn--primary nav__cta">Contact Us</a>
       </div>
@@ -163,7 +165,7 @@
   <header class="hero" style="min-height: 50vh;">
     <picture>
       <source srcset="pictures/booking-picture.webp" type="image/webp">
-      <img src="pictures/booking-picture.jpg" alt="Welcom-Inn bedroom, Belfast" class="hero__bg" style="object-position: center 50%;">
+      <img src="pictures/booking-picture.jpg" alt="Welcom-Inn bedroom in a Belfast rental property" class="hero__bg" width="1920" height="1280" style="object-position: center 50%;">
     </picture>
     <div class="container reveal">
       <h1>Our Properties</h1>
@@ -189,7 +191,10 @@
         <!-- Property 1 -->
         <div class="property-card reveal">
           <div class="property-card__img open-modal-btn" data-modal="modal-botanic">
-            <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast" loading="lazy">
+            <picture>
+              <source srcset="pictures/Botanic/picture1.webp" type="image/webp">
+              <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast — exterior view" loading="lazy" width="1200" height="1600">
+            </picture>
           </div>
           <div class="property-card__content">
             <h3 class="property-card__title open-modal-btn" data-modal="modal-botanic">Botanic Avenue Suite</h3>
@@ -209,7 +214,10 @@
         <!-- Property 2 -->
         <div class="property-card reveal">
           <div class="property-card__img open-modal-btn" data-modal="modal-bloomfield">
-            <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast" loading="lazy">
+            <picture>
+              <source srcset="pictures/Bloomfield/pic1.webp" type="image/webp">
+              <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast — living area" loading="lazy" width="1200" height="800">
+            </picture>
           </div>
           <div class="property-card__content">
             <h3 class="property-card__title open-modal-btn" data-modal="modal-bloomfield">Bloomfield Avenue Retreat</h3>
@@ -229,7 +237,10 @@
         <!-- Property 3 -->
         <div class="property-card reveal">
           <div class="property-card__img open-modal-btn" data-modal="modal-fitzroy">
-            <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast" loading="lazy">
+            <picture>
+              <source srcset="pictures/Fitzroy/IMG_9100.webp" type="image/webp">
+              <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast — interior view" loading="lazy" width="1200" height="900">
+            </picture>
           </div>
           <div class="property-card__content">
             <h3 class="property-card__title open-modal-btn" data-modal="modal-fitzroy">Fitzroy Avenue Townhouse</h3>
@@ -259,15 +270,15 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast – view 1" loading="lazy">
-          <img src="pictures/Botanic/picture2.jpg" alt="Botanic Avenue Suite, Belfast – view 2" loading="lazy">
-          <img src="pictures/Botanic/picture3.jpg" alt="Botanic Avenue Suite, Belfast – view 3" loading="lazy">
-          <img src="pictures/Botanic/picture4.jpg" alt="Botanic Avenue Suite, Belfast – view 4" loading="lazy">
-          <img src="pictures/Botanic/picture5.jpg" alt="Botanic Avenue Suite, Belfast – view 5" loading="lazy">
-          <img src="pictures/Botanic/picture6.jpeg" alt="Botanic Avenue Suite, Belfast – view 6" loading="lazy">
-          <img src="pictures/Botanic/picture7.jpeg" alt="Botanic Avenue Suite, Belfast – view 7" loading="lazy">
-          <img src="pictures/Botanic/picture8.jpeg" alt="Botanic Avenue Suite, Belfast – view 8" loading="lazy">
-          <img src="pictures/Botanic/picture9.jpeg" alt="Botanic Avenue Suite, Belfast – view 9" loading="lazy">
+          <picture><source srcset="pictures/Botanic/picture1.webp" type="image/webp"><img src="pictures/Botanic/picture1.jpg" alt="Botanic Avenue Suite, Belfast – view 1" loading="lazy" width="1200" height="1600"></picture>
+          <picture><source srcset="pictures/Botanic/picture2.webp" type="image/webp"><img src="pictures/Botanic/picture2.jpg" alt="Botanic Avenue Suite, Belfast – view 2" loading="lazy" width="1200" height="1600"></picture>
+          <picture><source srcset="pictures/Botanic/picture3.webp" type="image/webp"><img src="pictures/Botanic/picture3.jpg" alt="Botanic Avenue Suite, Belfast – view 3" loading="lazy" width="1200" height="1600"></picture>
+          <picture><source srcset="pictures/Botanic/picture4.webp" type="image/webp"><img src="pictures/Botanic/picture4.jpg" alt="Botanic Avenue Suite, Belfast – view 4" loading="lazy" width="1200" height="1600"></picture>
+          <picture><source srcset="pictures/Botanic/picture5.webp" type="image/webp"><img src="pictures/Botanic/picture5.jpg" alt="Botanic Avenue Suite, Belfast – view 5" loading="lazy" width="1200" height="675"></picture>
+          <picture><source srcset="pictures/Botanic/picture6.webp" type="image/webp"><img src="pictures/Botanic/picture6.jpeg" alt="Botanic Avenue Suite, Belfast – view 6" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Botanic/picture7.webp" type="image/webp"><img src="pictures/Botanic/picture7.jpeg" alt="Botanic Avenue Suite, Belfast – view 7" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Botanic/picture8.webp" type="image/webp"><img src="pictures/Botanic/picture8.jpeg" alt="Botanic Avenue Suite, Belfast – view 8" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Botanic/picture9.webp" type="image/webp"><img src="pictures/Botanic/picture9.jpeg" alt="Botanic Avenue Suite, Belfast – view 9" loading="lazy" width="1200" height="900"></picture>
         </div>
       </div>
       <div class="modal-info">
@@ -310,8 +321,8 @@
           </ul>
         </div>
         <div class="modal-platforms">
-          <a href="https://www.booking.com/hotel/gb/botanic-avenue-hostel.en-gb.html" target="_blank" rel="noopener">
-            <img src="pictures/listing/booking-logo.png" alt="Booking.com">
+          <a href="https://www.booking.com/hotel/gb/botanic-avenue-hostel.en-gb.html" target="_blank" rel="noopener noreferrer">
+            <img src="pictures/listing/booking-logo.png" alt="Booking.com" width="840" height="369" loading="lazy">
           </a>
         </div>
       </div>
@@ -326,15 +337,15 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 1" loading="lazy">
-          <img src="pictures/Bloomfield/pic2.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 2" loading="lazy">
-          <img src="pictures/Bloomfield/pic3.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 3" loading="lazy">
-          <img src="pictures/Bloomfield/pic4.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 4" loading="lazy">
-          <img src="pictures/Bloomfield/pic5.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 5" loading="lazy">
-          <img src="pictures/Bloomfield/pic6.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 6" loading="lazy">
-          <img src="pictures/Bloomfield/pic7.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 7" loading="lazy">
-          <img src="pictures/Bloomfield/pic8.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 8" loading="lazy">
-          <img src="pictures/Bloomfield/pic9.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 9" loading="lazy">
+          <picture><source srcset="pictures/Bloomfield/pic1.webp" type="image/webp"><img src="pictures/Bloomfield/pic1.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 1" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic2.webp" type="image/webp"><img src="pictures/Bloomfield/pic2.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 2" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic3.webp" type="image/webp"><img src="pictures/Bloomfield/pic3.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 3" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic4.webp" type="image/webp"><img src="pictures/Bloomfield/pic4.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 4" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic5.webp" type="image/webp"><img src="pictures/Bloomfield/pic5.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 5" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic6.webp" type="image/webp"><img src="pictures/Bloomfield/pic6.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 6" loading="lazy" width="1200" height="871"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic7.webp" type="image/webp"><img src="pictures/Bloomfield/pic7.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 7" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic8.webp" type="image/webp"><img src="pictures/Bloomfield/pic8.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 8" loading="lazy" width="1200" height="800"></picture>
+          <picture><source srcset="pictures/Bloomfield/pic9.webp" type="image/webp"><img src="pictures/Bloomfield/pic9.jpg" alt="Bloomfield Avenue Retreat, Belfast – view 9" loading="lazy" width="1200" height="800"></picture>
         </div>
       </div>
       <div class="modal-info">
@@ -374,14 +385,14 @@
           </ul>
         </div>
         <div class="modal-platforms">
-          <a href="https://www.airbnb.com/rooms/959990234714439468" target="_blank" rel="noopener">
-            <img src="pictures/listing/airbnb-logo.png" alt="Airbnb">
+          <a href="https://www.airbnb.com/rooms/959990234714439468" target="_blank" rel="noopener noreferrer">
+            <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" width="960" height="400" loading="lazy">
           </a>
-          <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener">
-            <img src="pictures/listing/booking-logo.png" alt="Booking.com">
+          <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener noreferrer">
+            <img src="pictures/listing/booking-logo.png" alt="Booking.com" width="840" height="369" loading="lazy">
           </a>
-          <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener">
-            <img src="pictures/listing/vrbo-logo.png" alt="VRBO">
+          <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener noreferrer">
+            <img src="pictures/listing/vrbo-logo.png" alt="VRBO" width="577" height="433" loading="lazy">
           </a>
         </div>
       </div>
@@ -396,15 +407,15 @@
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="slider-btn slider-next"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider-images">
-          <img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 1" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9101.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 2" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9102.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 3" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9103.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 4" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9105.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 5" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9070.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 6" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9071.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 7" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9089.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 8" loading="lazy">
-          <img src="pictures/Fitzroy/IMG_9094.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 9" loading="lazy">
+          <picture><source srcset="pictures/Fitzroy/IMG_9100.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9100.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 1" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9101.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9101.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 2" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9102.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9102.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 3" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9103.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9103.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 4" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9105.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9105.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 5" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9070.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9070.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 6" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9071.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9071.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 7" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9089.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9089.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 8" loading="lazy" width="1200" height="900"></picture>
+          <picture><source srcset="pictures/Fitzroy/IMG_9094.webp" type="image/webp"><img src="pictures/Fitzroy/IMG_9094.jpg" alt="Fitzroy Avenue Townhouse, Belfast – view 9" loading="lazy" width="1200" height="900"></picture>
         </div>
       </div>
       <div class="modal-info">
@@ -445,8 +456,8 @@
           </ul>
         </div>
         <div class="modal-platforms">
-          <a href="https://www.airbnb.com/users/profile/1470390562685848625" target="_blank" rel="noopener">
-            <img src="pictures/listing/airbnb-logo.png" alt="Airbnb">
+          <a href="https://www.airbnb.com/users/profile/1470390562685848625" target="_blank" rel="noopener noreferrer">
+            <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" width="960" height="400" loading="lazy">
           </a>
         </div>
       </div>
@@ -459,7 +470,7 @@
     <p>Contact us and we'll help you find the perfect property for your dates.</p>
     <div class="cta-actions">
       <a href="mailto:contact@welcom-inn.co.uk" class="btn btn--gold"><i class="fa-solid fa-envelope"></i> Email Us</a>
-      <a href="https://wa.me/+447938571368" target="_blank" rel="noopener" class="btn btn--outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://wa.me/+447938571368" target="_blank" rel="noopener noreferrer" class="btn btn--outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
     </div>
   </section>
 
@@ -468,11 +479,11 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy">
+          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy" width="908" height="504">
           <p>Premium Airbnb property management services in Belfast. We handle the hosting, you keep the rewards.</p>
           <div class="footer__socials">
-            <a href="https://www.facebook.com/welcom.inn" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/+447938571368" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/welcom.inn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/+447938571368" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
         
@@ -501,7 +512,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 

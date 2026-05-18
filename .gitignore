@@ -1,0 +1,11 @@
+node_modules/
+package.json
+package-lock.json
+.claude/
+claude_handoff.md
+PLAN.md
+update_cta.js
+update_mobile.js
+.DS_Store
+Thumbs.db
+*.log

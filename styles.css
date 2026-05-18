@@ -211,6 +211,14 @@ p  { color: var(--text); }
 .trust-bar__logos { display: flex; align-items: center; gap: 4rem; }
 .trust-bar img { height: 35px; opacity: 0.7; filter: grayscale(100%); transition: all var(--transition); }
 .trust-bar img:hover { opacity: 1; filter: grayscale(0%); }
+.trust-bar__label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
 
 /* ── About Split Section ── */
 .split-section {
@@ -671,7 +679,14 @@ p  { color: var(--text); }
   scrollbar-width: none; /* Firefox */
 }
 .slider-images::-webkit-scrollbar { display: none; }
-.slider-images img {
+.slider-images > picture {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: block;
+}
+.slider-images > picture > img,
+.slider-images > img {
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -860,7 +875,7 @@ p  { color: var(--text); }
   .footer__bottom { padding-top: 1rem; }
   .property-card__img { height: 200px; }
   .trust-bar .container { flex-direction: column; gap: 1rem; }
-  .trust-bar .container h4 { width: 100%; text-align: center; margin-bottom: 0; }
+  .trust-bar .container .trust-bar__label { width: 100%; text-align: center; margin-bottom: 0; }
   .trust-bar__logos { display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: nowrap; }
   .trust-bar img { height: 28px; }
 }

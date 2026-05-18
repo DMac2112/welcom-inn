@@ -1,0 +1,17 @@
+{
+  "name": "Welcom-Inn — Belfast Airbnb Management",
+  "short_name": "Welcom-Inn",
+  "description": "Professional Airbnb property management services in Belfast.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5C1539",
+  "icons": [
+    {
+      "src": "logos/black-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

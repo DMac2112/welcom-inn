@@ -7,6 +7,8 @@
   <meta name="description" content="Professional Airbnb management services in Belfast. Listing optimisation, guest communication, cleaning & maintenance. Keep up to 85% of your revenue.">
   <link rel="canonical" href="https://dmac2112.github.io/welcom-inn/index.html">
   <link rel="icon" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="favicon.jpg">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Welcom-Inn — Airbnb Property Management in Belfast">
@@ -70,7 +72,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3596ef9c88.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -79,13 +81,13 @@
   <nav class="nav" id="navbar" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="nav__logo">
-        <img src="logos/black-logo.png" alt="Welcom-Inn">
+        <img src="logos/black-logo.png" alt="Welcom-Inn" width="908" height="504">
       </a>
       <button class="nav__toggle" id="mobile-menu-btn" aria-label="Toggle menu">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div class="nav__links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="work.html">List a Property</a>
         <a href="properties.html">Book a Stay</a>
         <a href="faq.html">FAQ</a>
@@ -98,10 +100,10 @@
   <header class="hero">
     <picture>
       <source srcset="pictures/background.webp" type="image/webp">
-      <img src="pictures/background.jpg" alt="Belfast Property" class="hero__bg">
+      <img src="pictures/background.jpg" alt="Belfast city skyline at dusk" class="hero__bg" width="1920" height="1080">
     </picture>
     <div class="container reveal">
-      <img src="logos/white-logo.png" alt="Welcom-Inn" style="height: 100px; margin-bottom: 2rem;">
+      <img src="logos/white-logo.png" alt="Welcom-Inn logo" width="908" height="504" style="height: 100px; width: auto; margin-bottom: 2rem;">
       <h1>Expert Airbnb Management in Belfast</h1>
       <p>Maximise your property's potential income without the stress. We handle the hosting, maintenance, and guests. You keep the rewards.</p>
       <div class="hero__actions">
@@ -114,11 +116,11 @@
   <!-- Trust Bar -->
   <div class="trust-bar">
     <div class="container">
-      <h4 style="color: var(--muted); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Listed On</h4>
+      <p class="trust-bar__label">Listed On</p>
       <div class="trust-bar__logos">
-        <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" loading="lazy">
-        <img src="pictures/listing/booking-logo.png" alt="Booking.com" loading="lazy">
-        <img src="pictures/listing/vrbo-logo.png" alt="VRBO" loading="lazy">
+        <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" loading="lazy" width="960" height="400">
+        <img src="pictures/listing/booking-logo.png" alt="Booking.com" loading="lazy" width="840" height="369">
+        <img src="pictures/listing/vrbo-logo.png" alt="VRBO" loading="lazy" width="577" height="433">
       </div>
     </div>
   </div>
@@ -158,7 +160,7 @@
         <a href="work.html" class="btn btn--outline" style="margin-top: 1rem;">Learn More</a>
       </div>
       <div class="split-section__image">
-        <img src="pictures/belfast.jpg" alt="Belfast Cityscape" loading="lazy">
+        <img src="pictures/belfast.jpg" alt="Belfast cityscape with City Hall" loading="lazy" width="800" height="533">
       </div>
     </div>
   </section>
@@ -217,7 +219,7 @@
         <a href="work.html#cleaning" class="btn btn--primary" style="margin-top: 1rem;">View Cleaning Standards</a>
       </div>
       <div class="split-section__image">
-        <img src="pictures/cleaning.jpg" alt="Professional cleaning service" loading="lazy">
+        <img src="pictures/cleaning.jpg" alt="Professional cleaning service preparing a Welcom-Inn rental" loading="lazy" width="1920" height="2880">
       </div>
     </div>
   </section>
@@ -232,19 +234,19 @@
       </div>
 
       <div class="platform-reviews reveal">
-        <a href="https://www.airbnb.com/users/profile/1470390562685848625?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener" class="platform-card">
-          <img src="pictures/listing/airbnb-logo.png" alt="Airbnb">
+        <a href="https://www.airbnb.com/users/profile/1470390562685848625?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <img src="pictures/listing/airbnb-logo.png" alt="Airbnb" width="960" height="400" loading="lazy">
           <div class="platform-card__score">4.88 <small>/ 5</small></div>
           <div class="platform-card__stars">★★★★★</div>
           <div class="platform-card__label">View Reviews on Airbnb</div>
         </a>
-        <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener" class="platform-card">
-          <img src="pictures/listing/booking-logo.png" alt="Booking.com">
+        <a href="https://www.booking.com/hotel/gb/bloomfield-house-belfast1.en-gb.html" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <img src="pictures/listing/booking-logo.png" alt="Booking.com" width="840" height="369" loading="lazy">
           <div class="platform-card__stars">★★★★★</div>
           <div class="platform-card__label">View Reviews on Booking.com</div>
         </a>
-        <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener" class="platform-card">
-          <img src="pictures/listing/vrbo-logo.png" alt="VRBO">
+        <a href="https://www.vrbo.com/11376937ha" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <img src="pictures/listing/vrbo-logo.png" alt="VRBO" width="577" height="433" loading="lazy">
           <div class="platform-card__stars">★★★★★</div>
           <div class="platform-card__label">View Listing on VRBO</div>
         </a>
@@ -258,7 +260,7 @@
     <p>Contact us today for a free property evaluation.</p>
     <div class="cta-actions">
       <a href="mailto:contact@welcom-inn.co.uk" class="btn btn--gold"><i class="fa-solid fa-envelope"></i> Email Us</a>
-      <a href="https://wa.me/+447938571368" target="_blank" rel="noopener" class="btn btn--outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://wa.me/+447938571368" target="_blank" rel="noopener noreferrer" class="btn btn--outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
     </div>
   </section>
 
@@ -267,11 +269,11 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy">
+          <img src="logos/black-logo.png" alt="Welcom-Inn" loading="lazy" width="908" height="504">
           <p>Premium Airbnb property management services in Belfast. We handle the hosting, you keep the rewards.</p>
           <div class="footer__socials">
-            <a href="https://www.facebook.com/welcom.inn" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/+447938571368" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/welcom.inn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/+447938571368" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
         
@@ -300,7 +302,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+  <a href="https://wa.me/+447938571368" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
