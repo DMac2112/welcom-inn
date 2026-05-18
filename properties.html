@@ -89,13 +89,13 @@
             "addressLocality": "Belfast",
             "addressCountry": "GB"
           },
-          "numberOfRooms": 2,
+          "numberOfRooms": 4,
           "occupancy": {
             "@type": "QuantitativeValue",
-            "maxValue": 4
+            "maxValue": 8
           },
           "amenityFeature": [
-            {"@type": "LocationFeatureSpecification", "name": "2 Bedrooms", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "4 Bedrooms", "value": true},
             {"@type": "LocationFeatureSpecification", "name": "1.5 Bathrooms", "value": true}
           ]
         }
@@ -129,6 +129,7 @@
   }
   </script>
 
+  <meta name="theme-color" content="#5C1539">
   <link rel="preload" as="image" href="pictures/booking-picture.webp" type="image/webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -140,7 +141,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="nav" id="navbar">
+  <nav class="nav" id="navbar" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="nav__logo">
         <img src="logos/black-logo.png" alt="Welcom-Inn">
@@ -162,7 +163,7 @@
   <header class="hero" style="min-height: 50vh;">
     <picture>
       <source srcset="pictures/booking-picture.webp" type="image/webp">
-      <img src="pictures/booking-picture.jpg" alt="Kitchen" class="hero__bg" style="object-position: center 50%;">
+      <img src="pictures/booking-picture.jpg" alt="Welcom-Inn bedroom, Belfast" class="hero__bg" style="object-position: center 50%;">
     </picture>
     <div class="container reveal">
       <h1>Our Properties</h1>
@@ -213,8 +214,8 @@
           <div class="property-card__content">
             <h3 class="property-card__title open-modal-btn" data-modal="modal-bloomfield">Bloomfield Avenue Retreat</h3>
             <div class="property-card__meta">
-              <span><i class="fa-solid fa-user-group"></i> 4 Guests</span>
-              <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+              <span><i class="fa-solid fa-user-group"></i> 8 Guests</span>
+              <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
               <span><i class="fa-solid fa-bath"></i> 1.5 Baths</span>
             </div>
             <p style="margin-bottom: 1.5rem; color: var(--muted); font-size: 0.95rem;">A spacious and modern retreat located near Ballyhackamore. Ideal for families or groups looking for a comfortable base in a lively neighbourhood.</p>
@@ -252,7 +253,7 @@
   <!-- Modals -->
   <!-- Modal Botanic -->
   <div class="modal-overlay" id="modal-botanic">
-    <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
     <div class="modal-content">
       <div class="slider-container">
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -319,7 +320,7 @@
 
   <!-- Modal Bloomfield -->
   <div class="modal-overlay" id="modal-bloomfield">
-    <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
     <div class="modal-content">
       <div class="slider-container">
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -389,7 +390,7 @@
 
   <!-- Modal Fitzroy -->
   <div class="modal-overlay" id="modal-fitzroy">
-    <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
     <div class="modal-content">
       <div class="slider-container">
         <button class="slider-btn slider-prev"><i class="fa-solid fa-chevron-left"></i></button>

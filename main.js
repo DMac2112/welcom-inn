@@ -74,13 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if(header) {
             header.addEventListener('click', () => {
                 const isActive = item.classList.contains('active');
-                
+
                 // Close all others
-                faqItems.forEach(faq => faq.classList.remove('active'));
-                
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                    const h = faq.querySelector('.faq-header');
+                    if (h) h.setAttribute('aria-expanded', 'false');
+                });
+
                 // Open clicked if it wasn't active
                 if (!isActive) {
                     item.classList.add('active');
+                    header.setAttribute('aria-expanded', 'true');
                 }
             });
         }
