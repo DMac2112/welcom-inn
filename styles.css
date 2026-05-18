@@ -120,7 +120,7 @@ p  { color: var(--text); }
   height: 80px;
 }
 
-.nav__logo img { height: 60px; object-fit: contain; }
+.nav__logo img { height: 60px; width: auto; object-fit: contain; }
 
 .nav__toggle {
   display: none;
@@ -272,6 +272,7 @@ p  { color: var(--text); }
 }
 .property-card:hover { transform: translateY(-5px); }
 .property-card__img { height: 240px; overflow: hidden; cursor: pointer; }
+.property-card__img picture { display: block; width: 100%; height: 100%; }
 .property-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .property-card:hover .property-card__img img { transform: scale(1.05); }
 .property-card__title { cursor: pointer; }
@@ -470,7 +471,7 @@ p  { color: var(--text); }
   gap: 3rem;
   margin-bottom: 3rem;
 }
-.footer__brand img { height: 70px; margin-bottom: 1rem; }
+.footer__brand img { height: 70px; width: auto; margin-bottom: 1rem; }
 .footer__brand p { color: var(--muted); max-width: 300px; }
 .footer__links h4 { margin-bottom: 1.5rem; color: var(--plum); }
 .footer__links ul { display: flex; flex-direction: column; gap: 0.8rem; }
