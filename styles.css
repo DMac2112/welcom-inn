@@ -9,6 +9,7 @@
   --plum-light:  #9B2D64;
   --gold:        #C9A84C;
   --gold-light:  #E8C66A;
+  --gold-text:   #8F6E1E; /* darkened for WCAG AA 4.5:1 on white & surface */
   --white:       #ffffff;
   --surface:     #f8f9fa;
   --text:        #1f2022;
@@ -22,6 +23,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:focus-visible { outline: 3px solid var(--plum); outline-offset: 3px; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
 
@@ -56,6 +59,16 @@ p  { color: var(--text); }
 .section-header { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
 .section-header h2 { margin-bottom: 1rem; }
 .section-header p { color: var(--muted); font-size: 1.1rem; }
+
+.section-eyebrow {
+  color: var(--gold-text);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 /* ── Buttons ── */
 .btn {
@@ -412,7 +425,7 @@ p  { color: var(--text); }
   font-family: 'Outfit', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--gold);
+  color: var(--gold-text);
   line-height: 1;
 }
 .platform-card__score small {
@@ -476,7 +489,7 @@ p  { color: var(--text); }
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--gold);
+  color: var(--gold-text);
   margin-bottom: 1.25rem;
   display: block;
 }
@@ -573,7 +586,7 @@ p  { color: var(--text); }
   margin-bottom: 0.25rem;
 }
 .modal-info__sub {
-  color: var(--gold);
+  color: var(--gold-text);
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
