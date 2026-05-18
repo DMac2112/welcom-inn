@@ -249,9 +249,11 @@ p  { color: var(--text); }
   transition: transform var(--transition);
 }
 .property-card:hover { transform: translateY(-5px); }
-.property-card__img { height: 240px; overflow: hidden; }
+.property-card__img { height: 240px; overflow: hidden; cursor: pointer; }
 .property-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .property-card:hover .property-card__img img { transform: scale(1.05); }
+.property-card__title { cursor: pointer; }
+.property-card__title:hover { color: var(--plum-light); }
 .property-card__content { padding: 2rem; }
 .property-card__content h3 { margin-bottom: 0.5rem; color: var(--plum); }
 .property-card__meta { display: flex; gap: 1rem; color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
@@ -619,7 +621,8 @@ p  { color: var(--text); }
   opacity: 1;
 }
 @media (max-width: 640px) {
-  .modal-features { grid-template-columns: 1fr; gap: 1rem; }
+  .modal-features { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .modal-features ul:first-child { grid-column: 1 / -1; }
   .modal-info { padding: 1.25rem; }
 }
 .modal-overlay.active .modal-content {
@@ -832,7 +835,7 @@ p  { color: var(--text); }
   .footer__links h4 { margin-bottom: 0.5rem; }
   .footer__links ul { gap: 0.3rem; }
   .footer__bottom { padding-top: 0.75rem; font-size: 0.8rem; white-space: nowrap; }
-  .footer__brand img { margin: 0 auto 0.4rem; height: 55px; }
+  .footer__brand img { margin: 0 auto 1.25rem; height: 55px; }
   .footer__brand p { max-width: 100%; }
   .footer__links { text-align: center; }
   .footer__links h4 { margin-bottom: 0.6rem; }
